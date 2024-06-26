@@ -22,7 +22,7 @@ export default function Home() {
 			{/* <RecentDot dot={<DrawerNavPreview />} /> */}
 			<Projects />
 			<Tools />
-			<Achievements/>
+			{/* <Achievements/> */}
 			<Connect />
 		</>
 	);

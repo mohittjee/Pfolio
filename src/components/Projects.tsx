@@ -53,14 +53,14 @@ const Projects = () => {
 		<section id="projects">
 			<h2 className="text-lg flex items-center font-semibold pb-3">
 				Projects{" "}
-				<Link
+				{/* <Link
 					className="text-muted-foreground"
 					aria-label="anchor"
 					scroll
 					href={"/#projects"}
 				>
 					<FaHashtag className="ml-2 h-3 w-3" />
-				</Link>
+				</Link> */}
 				<span aria-hidden className="text-muted-foreground/50 text-sm ml-2">
 					(sorted by most recent)
 				</span>

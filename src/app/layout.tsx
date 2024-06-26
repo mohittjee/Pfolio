@@ -11,9 +11,9 @@ const font = Poppins({
     weight:["600"]
 })
 export const metadata: Metadata = {
-	title: "Pranav Rajveer",
+	title: "Mohit Kumar",
 	description:
-		"Pranav Rajveer's personal website. Software Engineer & FullStack Dev. Building web applications with Next.js,HonoJS, Tailwind CSS,Prisma and more.",
+		"Mohit Kumar's personal website. Software Engineer & Front-end Dev. Building web applications with Next.js, Tailwind CSS and more.",
 };
 
 export default function RootLayout({

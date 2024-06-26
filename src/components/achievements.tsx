@@ -1,5 +1,39 @@
 import Link from "next/link";
 import { FaHashtag } from "react-icons/fa";
+import {
+	Card,
+	CardContent,
+	CardDescription,
+	CardHeader,
+	CardTitle,
+} from "./ui/card";
+import { Separator } from "./ui/separator";
+
+const projects: {
+	title: string;
+	description: string;
+}[] = [
+	{
+		title: "Campus Connect - A Query Management System",
+		description:
+			"Campus Connect is a comprehensive query management system designed for colleges, schools, and various organizations.",
+	},
+	{
+		title: "Campus Connect - A Query Management System",
+		description:
+			"Campus Connect is a comprehensive query management system designed for colleges, schools, and various organizations.",
+	},
+	{
+		title: "Campus Connect - A Query Management System",
+		description:
+			"Campus Connect is a comprehensive query management system designed for colleges, schools, and various organizations.",
+	},
+	{
+		title: "Campus Connect - A Query Management System",
+		description:
+			"Campus Connect is a comprehensive query management system designed for colleges, schools, and various organizations.",
+	},
+];
 
 const achievements: { title: string; description: string; href: string }[] = [
 	{
@@ -50,6 +84,18 @@ const Achievements = () => {
 					</Link>
 				))}
 			</div>
+
+			<div className="grid grid-cols-1 gap-4 ">
+				{projects.map((project, i) => (
+					<Card key={i} className="shadow-sm rounded-2xl dark:hover:bg-zinc-900 cursor-pointer">
+						<CardHeader>
+							<CardTitle>{project.title}</CardTitle>
+							<CardDescription className="tracking-normal">{project.description}</CardDescription>
+						</CardHeader>
+					</Card>
+				))}
+			</div>
+
 		</section>
 	);
 };

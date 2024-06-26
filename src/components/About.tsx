@@ -7,14 +7,14 @@ const About = () => {
 			<section id="about">
 				<h2 className="text-lg font-semibold flex items-center">
 					About
-					<Link
+					{/* <Link
 						className="text-muted-foreground"
 						aria-label="anchor"
 						scroll
 						href={"/#about"}
 					>
 						<FaHashtag className="ml-2 h-3 w-3" />
-					</Link>
+					</Link> */}
 				</h2>
 				<p style={{textAlign:"justify"}}>
 					{/* {`I'm Pranav, a Founding Engineer who's all about turning wild ideas into kick-ass web apps. 
@@ -39,14 +39,14 @@ const Present = () => {
 		<section id="present">
 			<h2 className="text-lg flex items-center font-semibold">
 				Present{" "}
-				<Link
+				{/* <Link
 					className="text-muted-foreground"
 					aria-label="anchor"
 					scroll
 					href={"/#present"}
 				>
 					<FaHashtag className="ml-2 h-3 w-3" />
-				</Link>
+				</Link> */}
 			</h2>
 			<p style={{textAlign:"justify"}}>
 				{/* Currently I work as a Founding Engineer at <Link href="https://www.linkedin.com/company/tour-me-now/mycompany/" className="hover-effect cursor-pointer hover:animate-pulse">Tour YC(S21).&nbsp;</Link> In my free

@@ -61,14 +61,14 @@ const Stack = () => {
 		<section id="stack">
 			<h2 className="text-lg font-semibold flex items-center">
 				Tech-Stack
-				<Link
+				{/* <Link
 					className="text-muted-foreground"
 					aria-label="anchor"
 					scroll
 					href={"/#stack"}
 				>
 					<FaHashtag className="ml-2 h-3 w-3" />
-				</Link>
+				</Link> */}
 			</h2>
 			<div className="flex gap-4 flex-wrap py-3 ">
 				{stack.map((tech, i) => (
