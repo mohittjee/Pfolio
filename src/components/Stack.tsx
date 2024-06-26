@@ -7,40 +7,53 @@ import { FaHashtag } from "react-icons/fa";
 import { FiSmartphone } from "react-icons/fi";
 import {
 	SiAmazon,
+	SiBootstrap,
 	SiCplusplus,
 	SiCss3,
 	SiDocker,
 	SiExpress,
 	SiHiveBlockchain,
+	SiHtml5,
 	SiJavascript,
 	SiKubernetes,
+	SiMongodb,
 	SiMysql,
 	SiNextdotjs,
 	SiNodedotjs,
+	SiPhp,
 	SiPostgresql,
+	SiPostman,
 	SiPrisma,
 	SiPython,
 	SiReact,
 	SiTailwindcss,
 	SiTypescript,
+	SiXampp,
 } from "react-icons/si";
 import { Magnetic } from "./Magnetic";
 
 const stack: { name: string; icon: IconType }[] = [
 	{ name: "JavaScript", icon: SiJavascript },
-	{ name: "TypeScript", icon: SiTypescript },
-	{ name: "Python", icon: SiPython },
-	{ name: "C++", icon: SiCplusplus },
+	// { name: "TypeScript", icon: SiTypescript },
+	// { name: "Python", icon: SiPython },
+	// { name: "C++", icon: SiCplusplus },
 	{ name: "React", icon: SiReact },
 	{ name: "Next.js", icon: SiNextdotjs },
+	{ name: "MySQL", icon: SiMysql },
 	{ name: "Node.js", icon: SiNodedotjs },
-	{ name: "HonoJs", icon: SiExpress },
+	{ name: "MongoDB", icon: SiMongodb },
+	{ name: "XAMPP", icon: SiXampp },
+	{ name: "PHP", icon: SiPhp },
+	// { name: "HonoJs", icon: SiExpress },
+	{ name: "HTML5", icon: SiHtml5 },
+	{ name: "CSS3", icon: SiCss3},
 	{ name: "Tailwind CSS", icon: SiTailwindcss },
-	{ name: "PostgreSQL", icon: SiPostgresql },
-	{ name: "Prisma", icon: SiPrisma },
-	{ name: "Docker", icon: SiDocker },
-	{ name: "AWS", icon: SiAmazon },
-	{ name: "BlockChain", icon: SiHiveBlockchain },
+	{ name: "Bootstrap", icon: SiBootstrap},
+	// { name: "PostgreSQL", icon: SiPostgresql },
+	// { name: "Prisma", icon: SiPrisma },
+	// { name: "Docker", icon: SiDocker },
+	// { name: "AWS", icon: SiAmazon },
+	// { name: "BlockChain", icon: SiHiveBlockchain },
 ];
 
 const Stack = () => {
@@ -75,8 +88,10 @@ const Stack = () => {
 				))}
 			</div>
 			<p>
-				{`My strength is building core web applications which can serve people throughout the globe.
-				I'm currently working with Typescript, NextJS and HonoJS.  For me my first ❤️ is C++.  `}
+				{/* {`My strength is building core web applications which can serve people throughout the globe.
+				I'm currently working with Typescript, NextJS and HonoJS.  For me my first ❤️ is C++.  `} */}
+				{`My strength is building dynamic and responsive web applications. 
+				I'm currently focused on enhancing my skills in NextJS and ReactJS. `}
 			</p>
 		</section>
 	);

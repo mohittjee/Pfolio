@@ -16,7 +16,7 @@ import {
 import { Separator } from "./ui/separator";
 
 const projects: {
-	href: string;
+	href?: string;
 	title: string;
 	description: string;
 	stack: string[];
@@ -24,34 +24,27 @@ const projects: {
 	X?: string;
 }[] = [
 	{
-		href: "https://linguify.pranavrajveer.com/",
-		title: "Linguify - AI Based Language Learning App",
+		href: "https://campusconnectcms.000webhostapp.com/",
+		title: "Campus Connect - A Query Management System",
 		description:
-			"Linguify is a fun and engaging language learning app that uses gamification and bite-sized lessons to make acquiring a new language enjoyable. ",
-		stack: ["Next.js", "Tailwind CSS", "Drizzle","PostGres","ReactAdmin"],
-		repo: "https://github.com/Neon-20/linguify",
-		X:   "https://x.com/Vapi_AI/status/1788279102056604125"
+			"Campus Connect is a comprehensive query management system designed for colleges, schools, and various organizations.",
+		stack: ["XAMPP","PHP", "MySQL", "Bootstrap", "HTML5",],
+		repo: "https://github.com/mohittjee/Complaint-Management-System",
+		// X:   ""
 	},
 	{
-		href: "https://authify.pranavrajveer.com/",
-		title: "Authify - Authentication for Devs",
-		description: "Rated as Top-20 products of the day as Authentication Template with NextAuth on ProductHunt.",
-		stack: ["Next.js", "Tailwind CSS", "Prisma", "NextAuth"],
-		repo: "https://github.com/Neon-20/Authify",
+		// href: "",
+		title: "Swagy Hub - Ecommerce Website",
+		description: "Swagy Hub is an ecommerce platform offering a seamless shopping experience with secure authentication and smooth data flow.",
+		stack: ["MERN", "Firebase🔥", ],
+		repo: "https://github.com/mohittjee/SwagyHub",
 	},
 	{
-		href: "https://filemagnet.pranavrajveer.com/",
-		title: "FileMagnet - Convert files with ease.",
-		description: "FileMagnet is a free file converter that helps you convert file formats without any hassle. Under the hood it doesn't use any db or server to store files.",
-		stack: ["Next.js", "Tailwind CSS", "FFMPeg", "Wasm","Shadcn"],
-		repo: "https://github.com/Neon-20/FileMagnet-File-Converter",
-	},
-	{
-		href: "https://developersden.pranavrajveer.com/",
-		title: "DevelopersDen - Add resources on the fly",
-		description: "DevelopersDen is an open source collection of quality resources for developers, designers & backend nerds.",
-		stack: ["Next.js", "Tailwind CSS", "SupaBase","Shadcn"],
-		repo: "https://github.com/Neon-20/developersDen",
+		// href: "",
+		title: "Groovify - A Music Player",
+		description: "Groovify is a music player application featuring a clean and intuitive interface, allowing users to create playlists and manage song libraries efficiently.",
+		stack: ["HTML5","CSS3","JavaScript",],
+		// repo: "",
 	},
 ];
 

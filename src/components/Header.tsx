@@ -14,8 +14,8 @@ const Header = ({ children }: { children?: React.ReactNode }) => {
 			<div className="flex gap-4 items-center w-full justify-between">
 				<div className="flex items-center gap-4">
 					<Image
-						src={"/pranav.png"}
-						alt="Pranav Rajveer"
+						src={"/rewrite.gif"}
+						alt="Mohit Kumar"
 						width={64}
 						priority
 						height={64}
@@ -24,12 +24,12 @@ const Header = ({ children }: { children?: React.ReactNode }) => {
 					<div className="relative">
 						<div className="block md:hidden">
 							<h1 className="text-xl leading-normal font-semibold">
-								Pranav Rajveer
+								Mohit Kumar
 							</h1>
 							<p className="text-muted-foreground text-lg leading-none font-medium">
-								Full Stack Developer
+								Software Engineer
 								<br />
-								<span className="text-sm font-medium">Software Engineer</span>
+								<span className="text-sm font-medium">(Front-end Developer)</span>
 							</p>
 						</div>
 						<div className="hidden md:block">
@@ -41,13 +41,13 @@ const Header = ({ children }: { children?: React.ReactNode }) => {
 								text={
 									<div>
 										<h1 className="text-2xl leading-normal font-semibold">
-											Pranav Rajveer
+											Mohit Kumar
 										</h1>
 										<p className="text-muted-foreground text-lg leading-none font-medium">
 										    Software Engineer
 											<br />
 											<span className="text-base font-medium">
-											Founding Engineer
+											(Front-end Developer)
 											</span>
 										</p>
 									</div>
@@ -55,7 +55,7 @@ const Header = ({ children }: { children?: React.ReactNode }) => {
 								secondaryText={
 									<div>
 										<h1 className="text-2xl leading-normal font-semibold">
-											Pranav Rajveer
+											Mohit Kumar
 										</h1>
 										<p className="text-muted-foreground text-lg leading-none font-medium">
 											Problem Solver
@@ -79,7 +79,7 @@ const Header = ({ children }: { children?: React.ReactNode }) => {
                 whileHover={{ scale: 1 }}
                 whileTap={{ scale: 0.9 }}
                 >
-				<Link href="https://drive.google.com/file/d/1_aEF8U-rz8vlWmvLz3oRgLieXXTYaV97/view?usp=sharing" target="_blank">
+				<Link href="https://drive.google.com/file/d/1XQg4IWR-Li9tOqN8MC5UxiCcxb10FBYz/view?usp=drive_link" target="_blank">
 				<div className="absolute hidden md:block mt-2 items-center justify-between bg-gray-200 rounded-xl p-2 tracking-wide text-muted-foreground dark:bg-transparent dark:bg-clip-text hover-effect cursor-pointer hover:animate-pulse">
                 Hiring? Check out My CV.
                 </div>		
