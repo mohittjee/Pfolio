@@ -39,7 +39,7 @@ export default function RootLayout({
 					<main className="max-w-2xl space-y-20 mx-auto py-24 pt-12 px-1">
 						{children}
 					</main>
-					{/* <Navbar /> */}
+					<Navbar />
 				</ThemeProvider>
 			</body>
 		</html>

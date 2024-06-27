@@ -9,6 +9,7 @@ import RecentDot from "@/components/RecentDot";
 import DrawerNavPreview from "./dotdotdot/_components/drawer-nav-preview";
 import Achievements from "@/components/achievements";
 import Calcom from "@/components/calcom";
+import Footer from "@/components/footer";
 
 const posts = blogPosts.reverse();
 
@@ -24,6 +25,7 @@ export default function Home() {
 			<Tools />
 			{/* <Achievements/> */}
 			<Connect />
+			<Footer/>
 		</>
 	);
 }

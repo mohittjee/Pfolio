@@ -1,4 +1,5 @@
 "use client"
+import React from "react";
 import { ArrowUpRight } from "lucide-react";
 import Link from "next/link";
 import { FaHashtag } from "react-icons/fa";
@@ -6,13 +7,16 @@ import { Button } from "./ui/button";
 import { GitHubLogoIcon, LinkedInLogoIcon, InstagramLogoIcon } from "@radix-ui/react-icons";
 import { X, Globe, Mail, XIcon } from "lucide-react";
 import {motion} from "framer-motion";
-<Mail />
+
+import SubmitBtn from "./formcontruct/submitbutton";
+import toast from "react-hot-toast";
+import { sendEmail } from "./formcontruct/sendEmail";
 
 const Connect = () => {
 	return (
 		<section id="connect">
 			<h2 className="text-lg font-semibold flex items-center pb-3">
-				Let's Connect..
+				Let's work on some ideas together..
 				{/* <Link
 					className="text-muted-foreground"
 					aria-label="anchor"
@@ -23,10 +27,8 @@ const Connect = () => {
 				</Link> */}
 			</h2>
 			<div className="flex flex-col space-y-1 sm:text-base text-sm ">
-				
 
-
-				<div className="flex gap-4">
+				<div className="flex gap-4 pb-6">
 					{/* <p className="max-w-[6ch] w-full">Github</p> */}
 
 					<Link target="_blank" href={"https://github.com/mohittjee"}>
@@ -91,6 +93,47 @@ const Connect = () => {
 					</div> */}
 
 				</div>	
+				
+				
+					
+					
+					<div className="gap-4">
+						<h2 className="text-lg font-semibold flex items-center pb-3">
+							Or Leave a Message
+						</h2>
+							<form
+										className=" flex flex-col  dark:text-black"
+										action={async (formData) => {
+										const { data, error } = await sendEmail(formData);
+
+										if (error) {
+											toast.error(error);
+											return;
+										}
+
+										toast.success("Email sent successfully!");
+										}}
+									>
+										<input
+										className="h-14 px-4 rounded-xl border border-gray-300 dark:bg-white dark:bg-opacity-80 dark:focus:bg-opacity-100 transition-all dark:outline-none"
+										name="senderEmail"
+										type="email"
+										required
+										maxLength={500}
+										placeholder="Your email"
+										/>
+										<textarea
+										className="h-40 my-3 rounded-xl border border-gray-300 p-4 dark:bg-white dark:bg-opacity-80 dark:focus:bg-opacity-100 transition-all dark:outline-none"
+										name="message"
+										placeholder="Your message"
+										required
+										maxLength={5000}
+										/>
+										<div className="items-center justify-center flex flex-col mt-4">
+										<SubmitBtn />
+										</div>
+									</form>
+						</div>
 			</div>
 		</section>
 	);
