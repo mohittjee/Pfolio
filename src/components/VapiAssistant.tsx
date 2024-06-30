@@ -35,9 +35,9 @@ export default function VapiAssistant() {
         as="button"
         className="dark:bg-black bg-white text-black dark:text-white flex items-center space-x-2 cursor-pointer"
       >
-        <Mic className="h-5 w-5 mr-1"/>
-      {callStatus === "inactive" ? (<span onClick={start}>Ask Angela about me.</span>) : null}
-      {callStatus === "loading" ? <span className="animate-pulse">One Sec..</span> : null}
+        <Mic className="h-5 w-5 mr-1 dark:text-[#8E8FFA]"/>
+      {callStatus === "inactive" ? (<span onClick={start}>Ask Momo about me.</span>) : null}
+      {callStatus === "loading" ? <span className="animate-pulse dark:text-[#8E8FFA]">One Sec..</span> : null}
       {callStatus === "active" ? (<span  onClick={stop}>Press to Stop</span>) : null}
       </HoverBorderGradient>
     </div>

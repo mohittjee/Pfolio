@@ -50,7 +50,7 @@ const stack: { name: string; icon: IconType }[] = [
 
 const Stack = () => {
 	return (
-		<section id="stack">
+		<section id="stack" className="dark:text-[#8E8FFA]">
 			<h2 className="text-lg font-semibold flex items-center">
 				Tech-Stack
 				{/* <Link
@@ -71,7 +71,9 @@ const Stack = () => {
 								rotate: Math.random() * 2.5,
 								transition: { duration: 0.1 },
 							}}
-							className=" flex items-center w-fit border p-1 px-2 cursor-pointer leading-none hover:shadow-md dark:shadow-border/25 transition-shadow duration-100"
+							// className=" flex items-center w-fit border p-1 px-2 cursor-pointer leading-none hover:shadow-md dark:shadow-border/25 transition-shadow duration-100"
+							className="flex items-center w-fit dark:border-[#8E8FFA] border p-1 px-2 cursor-pointer leading-none hover:shadow-md dark:shadow-border/25 transition-shadow duration-100 text-black dark:text-[#8E8FFA]"
+
 						>
 							<tech.icon className="h-5 w-5 mr-2" />
 							{tech.name}

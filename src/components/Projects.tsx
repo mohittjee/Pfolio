@@ -3,6 +3,7 @@ import Link from "next/link";
 import { Badge } from "./ui/badge";
 import { FaHashtag } from "react-icons/fa";
 import { Button } from "./ui/button";
+import SpotlightCard from "./ui/SpotLightCard";
 import { GitHubLogoIcon } from "@radix-ui/react-icons";
 import { X, Globe } from "lucide-react";
 import {motion} from "framer-motion";
@@ -50,7 +51,7 @@ const projects: {
 
 const Projects = () => {
 	return (
-		<section id="projects">
+		<section id="projects" className="dark:text-[#8E8FFA]">
 			<h2 className="text-lg flex items-center font-semibold pb-3">
 				Projects{" "}
 				{/* <Link
@@ -61,14 +62,15 @@ const Projects = () => {
 				>
 					<FaHashtag className="ml-2 h-3 w-3" />
 				</Link> */}
-				<span aria-hidden className="text-muted-foreground/50 text-sm ml-2">
+				<span aria-hidden className="text-muted-foreground/50 text-sm ml-2 ">
 					(sorted by most recent)
 				</span>
 			</h2>
 
-			<div className="grid grid-cols-1 gap-4 ">
+			<div className="grid grid-cols-1 gap-4">
 				{projects.map((project, i) => (
-					<Card key={i} className="shadow-sm rounded-2xl dark:hover:bg-zinc-900 cursor-pointer">
+					 <SpotlightCard key={i}>
+						<Card key={i} className="shadow-xl rounded-2xl">
 						<CardHeader>
 							<CardTitle>{project.title}</CardTitle>
 							<CardDescription className="tracking-normal">{project.description}</CardDescription>
@@ -83,8 +85,8 @@ const Projects = () => {
                                         whileTap={{ scale: 0.9 }}
                                         className="w-full"
                                         >
-										<Button className="rounded-xl">
-											<Globe className="mr-2 size-4" />
+										<Button className="rounded-xl dark:bg-[#7E30E1]">
+										<Globe className="mr-2 size-4" />
 											Website
 										</Button>
 										</motion.button>
@@ -97,7 +99,7 @@ const Projects = () => {
                                         whileTap={{ scale: 0.9 }}
                                         className="w-full"
                                         >
-										<Button className="rounded-xl">
+										<Button className="rounded-xl dark:bg-[#7E30E1]">
 											<GitHubLogoIcon className="mr-2 size-4" />
 											Repo
 										</Button>
@@ -122,7 +124,7 @@ const Projects = () => {
 							<div className="flex flex-wrap items-center justify-between gap-4">
 								<div className="flex flex-wrap gap-2">
 									{project.stack.map((tech) => (
-										<Badge className="opacity-50 rounded-xl" key={tech}>
+										<Badge className="opacity-50 rounded-xl dark:bg-[#8E8FFA]" key={tech}>
 											{tech}
 										</Badge>
 									))}
@@ -130,6 +132,7 @@ const Projects = () => {
 							</div>
 						</CardContent>
 					</Card>
+					</SpotlightCard>
 				))}
 			</div>
 		</section>

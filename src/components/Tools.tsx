@@ -8,6 +8,7 @@
 		CardTitle,
 	} from "./ui/card";
 	import { Separator } from "./ui/separator";
+	import SpotlightCard from "./ui/SpotLightCard";
 
 	const projects: {
 		title: string;
@@ -33,7 +34,7 @@
 
 	const Tools = () => {
 		return (
-			<section id="tools" >
+			<section id="tools" className="dark:text-[#8E8FFA]" >
 				<h2 className="text-lg flex items-center font-semibold pb-3">
 					Experiences
 					{/* <Link
@@ -61,18 +62,20 @@
 				
 				<div className="grid grid-cols-1 gap-4 ">
 					{projects.map((project, i) => (
-						<Card key={i} className="shadow-sm rounded-2xl dark:hover:bg-zinc-900 cursor-pointer">
-						<CardHeader>
-							<CardTitle>{project.title}</CardTitle>
-							<CardContent>
-								<ul className="list-disc list-outside">
-									{project.description.map((point, index) => (
-										<li key={index} >{point}</li>
-									))}
-								</ul>
-							</CardContent>
-						</CardHeader>
-						</Card>
+						<SpotlightCard key={i}>
+							<Card key={i} className="shadow-xl rounded-2xl cursor-auto">
+							<CardHeader>
+								<CardTitle>{project.title}</CardTitle>
+								<CardContent>
+									<ul className="list-disc list-outside">
+										{project.description.map((point, index) => (
+											<li key={index} >{point}</li>
+										))}
+									</ul>
+								</CardContent>
+							</CardHeader>
+							</Card>
+						</SpotlightCard>
 					))}
 				</div>
 

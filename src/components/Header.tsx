@@ -27,12 +27,12 @@ const Header = ({ children }: { children?: React.ReactNode }) => {
 								Mohit Kumar
 							</h1>
 							<p className="text-muted-foreground text-lg leading-none font-medium">
-								Software Engineer
-								<br />
-								<span className="text-sm font-medium">(Front-end Developer)</span>
+								Software Developer
+								{/* <br />
+								<span className="text-sm font-medium">(Front-end Developer)</span> */}
 							</p>
 						</div>
-						<div className="hidden md:block">
+						<div className="hidden md:block ">
 							<Text3D
 								clickToggle
 								bgColors={["bg-background", "bg-background"]}
@@ -40,15 +40,15 @@ const Header = ({ children }: { children?: React.ReactNode }) => {
 								containerClassName="rounded-none border-none"
 								text={
 									<div>
-										<h1 className="text-2xl leading-normal font-semibold">
+										<h1 className="text-2xl leading-normal font-semibold ">
 											Mohit Kumar
 										</h1>
 										<p className="text-muted-foreground text-lg leading-none font-medium">
-										    Software Engineer
-											<br />
+										    Software Developer
+											{/* <br />
 											<span className="text-base font-medium">
 											(Front-end Developer)
-											</span>
+											</span> */}
 										</p>
 									</div>
 								}
@@ -80,7 +80,7 @@ const Header = ({ children }: { children?: React.ReactNode }) => {
                 whileTap={{ scale: 0.9 }}
                 >
 				<Link href="https://drive.google.com/file/d/1XQg4IWR-Li9tOqN8MC5UxiCcxb10FBYz/view?usp=drive_link" target="_blank">
-				<div className="absolute hidden md:block mt-2 items-center justify-between bg-gray-200 rounded-xl p-2 tracking-wide text-muted-foreground dark:bg-transparent dark:bg-clip-text hover-effect cursor-pointer hover:animate-pulse">
+				<div className="absolute hidden md:block mt-2 items-center justify-between bg-gray-200 rounded-xl p-2 tracking-wide text-muted-foreground dark:bg-transparent dark:bg-clip-text hover-effect cursor-pointer hover:text-black  dark:text-[#a64dff]">
                 Hiring? Check out My CV.
                 </div>		
 				</Link>	
@@ -118,7 +118,7 @@ const HoverMe = ({ className }: { className?: string }) => {
 				>
 					<stop
 						offset="0%"
-						stopColor="hsl(1.4, 100%, 67%)"
+						stopColor="hsl(1.4, 60%, 67%)"
 						stopOpacity="1"
 					></stop>
 					<stop

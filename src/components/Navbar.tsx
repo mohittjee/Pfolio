@@ -29,7 +29,7 @@ const Navbar = () => {
 				layout
 				style={{ originY: "0px" }}
 				transition={{ duration: 0.4 }}
-				className="bg-secondary shadow-sm rounded-full relative mx-auto justify-evenly items-center  max-w-xs p-2 px-6 border border-gray-300"
+				className="bg-secondary shadow-lg rounded-full relative mx-auto justify-evenly items-center dark:border-purple-600  max-w-xs p-2 px-6 border border-gray-300 dark:bg-[#33186B]"
 			>
 				<div className="flex gap-2 justify-evenly items-center">
 					{tabs.map((tab) => (
@@ -40,7 +40,7 @@ const Navbar = () => {
 								onClick={() => setActiveTab(tab.id)}
 								className={cn(
 									"inline-flex items-center justify-center whitespace-nowrap text-sm font-medium transition focus-visible:outline-none  focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50",
-									"relative h-9 px-4 py-2 rounded-full"
+									"relative h-9 px-4 py-2 rounded-full ",
 								)}
 								style={{
 									WebkitTapHighlightColor: "transparent",
