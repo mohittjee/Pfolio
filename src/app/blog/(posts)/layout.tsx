@@ -1,7 +1,7 @@
 "use client"
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
-import { useEffect, useState, useRef } from "react";
+import { useEffect, useState, useRef, CSSProperties } from "react";
 
 const Layout = ({ children }: { children: React.ReactNode }) => {
   const [isSticky, setIsSticky] = useState(false);
@@ -22,7 +22,7 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
     };
   }, []);
 
-  const stickyStyles = isSticky
+  const stickyStyles: CSSProperties = isSticky
     ? {
         position: "fixed",
         top: 0,
@@ -39,7 +39,7 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
           className="flex justify-end py-4"
           style={stickyStyles}
         >
-          <Button asChild className="rounded-full border opacity-85 border-gray-300 shadow-lg ">
+          <Button asChild className="rounded-full border opacity-85 border-gray-300 shadow-lg">
             <Link href={"/blog"}>Return to blog</Link>
           </Button>
         </menu>
