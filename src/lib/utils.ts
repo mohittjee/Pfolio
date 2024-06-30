@@ -6,10 +6,15 @@ export function cn(...inputs: ClassValue[]) {
 }
 
 export const blogPosts: { title: string; date: string; href: string }[] = [
+	// {
+	// 	title: "Custom Loaders With React, TypeScript, and Framer Motion",
+	// 	date: "May 2024",
+	// 	href: "animated-loaders",
+	// },
 	{
-		title: "Custom Loaders With React, TypeScript, and Framer Motion",
-		date: "mar. '24",
-		href: "animated-loaders",
+		title: "In Progress...",
+		date: "June 2024",
+		href: "comingSoon",
 	},
 ];
 
