@@ -46,7 +46,7 @@ const Present = () => {
 			</h2>
 			<p style={{textAlign:"justify"}}>
 
-				Currently, I'm pursuing a Bachelor of Computer Applications at&nbsp;
+				Currently, I&apos;m pursuing a Bachelor of Computer Applications at&nbsp;
 				<Link
 					className="text-muted-foreground hover:text-foreground border-b border-muted-foreground hover:border-foreground transition-colors dark:text-[#a64dff]"
 					target="_blank"
@@ -56,7 +56,7 @@ const Present = () => {
 					Doon Business School
 
 				</Link> 
-				.&nbsp;In my free time, I work on various projects and internships to hone my skills. I'm always on the lookout for new opportunities and collaborations, so feel free to&nbsp;
+				.&nbsp;In my free time, I work on various projects and internships to hone my skills. I&apos;m always on the lookout for new opportunities and collaborations, so feel free to&nbsp;
 
 				<Link
 					className="text-muted-foreground hover:text-foreground border-b border-muted-foreground hover:border-foreground transition-colors dark:text-[#a64dff]"

@@ -16,7 +16,7 @@ const Connect = () => {
 	return (
 		<section id="connect">
 			<h2 className="text-lg font-semibold flex items-center pb-3">
-				Let's work on some ideas together..
+				Let&apos;s work on some ideas together..
 				{/* <Link
 					className="text-muted-foreground"
 					aria-label="anchor"
