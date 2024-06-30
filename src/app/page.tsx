@@ -16,6 +16,7 @@ const posts = blogPosts.reverse();
 export default function Home() {
 	return (
 		<>
+			
 			<Header />
 			<About />
 			<Calcom/>
