@@ -5,7 +5,7 @@ import { useEffect, useState, useRef } from "react";
 
 const Layout = ({ children }: { children: React.ReactNode }) => {
   const [isSticky, setIsSticky] = useState(false);
-  const buttonRef = useRef<HTMLMenuElement>(null);
+  const buttonRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     const handleScroll = () => {
