@@ -37,15 +37,15 @@ const projects: {
 		// href: "",
 		title: "Swagy Hub - Ecommerce Website",
 		description: "Swagy Hub is an ecommerce platform offering a seamless shopping experience with secure authentication and smooth data flow.",
-		stack: ["MERN", "Firebase🔥", ],
+		stack: ["MERN Stack", "Firebase🔥", ],
 		repo: "https://github.com/mohittjee/SwagyHub",
 	},
 	{
 		// href: "",
-		title: "Groovify - A Music Player",
-		description: "Groovify is a music player application featuring a clean and intuitive interface, allowing users to create playlists and manage song libraries efficiently.",
-		stack: ["HTML5","CSS3","JavaScript",],
-		// repo: "",
+		title: "Gmail clone",
+		description: "Developed a Gmail clone application, focusing on high-level coding and mail composing functionality.",
+		stack: ["MERN Stack",],
+		repo: "https://github.com/mohittjee/Gmail-Clone",
 	},
 ];
 
@@ -71,67 +71,67 @@ const Projects = () => {
 				{projects.map((project, i) => (
 					 <SpotlightCard key={i}>
 						<Card key={i} className="shadow-xl rounded-2xl">
-						<CardHeader>
-							<CardTitle>{project.title}</CardTitle>
-							<CardDescription className="tracking-normal">{project.description}</CardDescription>
-						</CardHeader>
-						<CardContent className="space-y-4">
-							<Separator />
-							<div className="flex items-center flex-wrap gap-2 ">
-								{project.href && (
-									<Link target="_blank" href={project.href}>
-										<motion.button
-                                        whileHover={{ scale: 1.1 }}
-                                        whileTap={{ scale: 0.9 }}
-                                        className="w-full"
-                                        >
-										<Button className="rounded-xl dark:bg-[#7E30E1]">
-										<Globe className="mr-2 size-4" />
-											Website
-										</Button>
-										</motion.button>
-									</Link>
-								)}
-								{project.repo && (
-									<Link target="_blank" href={project.repo}>
-										<motion.button
-                                        whileHover={{ scale: 1.1 }}
-                                        whileTap={{ scale: 0.9 }}
-                                        className="w-full"
-                                        >
-										<Button className="rounded-xl dark:bg-[#7E30E1]">
-											<GitHubLogoIcon className="mr-2 size-4" />
-											Repo
-										</Button>
-										</motion.button>
-									</Link>
-								)}
-								{project.X && (
-									<Link target="_blank" href={project.X}>
-										<motion.button
-                                        whileHover={{ scale: 1.1 }}
-                                        whileTap={{ scale: 0.9 }}
-                                        className="w-full"
-                                        >
-										<Button className="rounded-xl">
-											<X className="mr-2 size-4" />
-											View on X
-										</Button>
-										</motion.button>
-									</Link>
-								)}
-							</div>
-							<div className="flex flex-wrap items-center justify-between gap-4">
-								<div className="flex flex-wrap gap-2">
-									{project.stack.map((tech) => (
-										<Badge className="opacity-50 rounded-xl dark:bg-[#8E8FFA]" key={tech}>
-											{tech}
-										</Badge>
-									))}
+							<CardHeader>
+								<CardTitle>{project.title}</CardTitle>
+								<CardDescription className="tracking-normal">{project.description}</CardDescription>
+							</CardHeader>
+							<CardContent className="space-y-4">
+								<Separator />
+								<div className="flex items-center flex-wrap gap-2 ">
+									{project.href && (
+										<Link target="_blank" href={project.href}>
+											<motion.button
+												whileHover={{ scale: 1.1 }}
+												whileTap={{ scale: 0.9 }}
+												className="w-full"
+												>
+												<Button className="rounded-xl dark:bg-[#7E30E1]">
+												<Globe className="mr-2 size-4" />
+													Website
+												</Button>
+											</motion.button>
+										</Link>
+									)}
+									{project.repo && (
+										<Link target="_blank" href={project.repo}>
+											<motion.button
+											whileHover={{ scale: 1.1 }}
+											whileTap={{ scale: 0.9 }}
+											className="w-full"
+											>
+												<Button className="rounded-xl dark:bg-[#7E30E1]">
+													<GitHubLogoIcon className="mr-2 size-4" />
+													Repo
+												</Button>
+											</motion.button>
+										</Link>
+									)}
+									{project.X && (
+										<Link target="_blank" href={project.X}>
+											<motion.button
+											whileHover={{ scale: 1.1 }}
+											whileTap={{ scale: 0.9 }}
+											className="w-full"
+											>
+												<Button className="rounded-xl">
+													<X className="mr-2 size-4" />
+													View on X
+												</Button>
+											</motion.button>
+										</Link>
+									)}
 								</div>
-							</div>
-						</CardContent>
-					</Card>
+								<div className="flex flex-wrap items-center justify-between gap-4">
+									<div className="flex flex-wrap gap-2">
+										{project.stack.map((tech) => (
+											<Badge className="opacity-50 rounded-xl dark:bg-[#8E8FFA]" key={tech}>
+												{tech}
+											</Badge>
+										))}
+									</div>
+								</div>
+							</CardContent>
+						</Card>
 					</SpotlightCard>
 				))}
 			</div>
