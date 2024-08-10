@@ -13,7 +13,7 @@ export const blogPosts: { title: string; date: string; href: string }[] = [
 	// },
 	{
 		title: "In Progress...",
-		date: "June 2024",
+		date: "",
 		href: "comingSoon",
 	},
 ];

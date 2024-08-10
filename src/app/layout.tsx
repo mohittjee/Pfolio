@@ -33,7 +33,7 @@ export default function RootLayout({
 			<head>
 			<script src="https://beamanalytics.b-cdn.net/beam.min.js" data-token="8efceb49-2776-47f5-bb58-33fcc018acc9" async></script>
             </head>
-			<body className={(font.className, "p-3 relative")}>
+			<body className={(font.className, "p-3 relative overflow-y-hidden")}>
 				<Cursor/>
 				<Background />
 				<GridOverlay/>
@@ -59,9 +59,9 @@ export default function RootLayout({
 				{/* <div className="absolute inset-0 h-full w-full bg-transparent -z-30"><div className="absolute bottom-0 left-0 right-0 top-0 bg-[linear-gradient(to_right,#4f4f4f2e_1px,transparent_1px),linear-gradient(to_bottom,#4f4f4f2e_1px,transparent_1px)] bg-[size:14px_24px] [mask-image:radial-gradient(ellipse_60%_50%_at_30%_0%,#000_70%,transparent_100%)]"></div></div> */}
 				
 
-					<main className="max-w-2xl space-y-20 mx-auto py-24 pt-12 px-1">
-						{children}
-					</main>
+				<main className="max-w-2xl space-y-20 mx-auto py-24 pt-12 px-1">
+					{children}
+				</main>
 				<Navbar />
 				</ThemeProvider>
 			</body>
